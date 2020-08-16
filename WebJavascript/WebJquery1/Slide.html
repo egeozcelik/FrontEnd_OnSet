@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                //$("#panel").slideDown("slow");
+                //$("#panel").slideUp("slow");
+                $("#panel").slideToggle();
+            });
+
+            $("#kutu").click(function () {
+                //$("#kutu").animate({
+                //    left: '250px',
+                //    opacity: '0.3',
+                //    height: '150px',
+                //    width: '150px',
+                //});
+                var div = $("#kutu");
+                div.animate({ height: '300px', opacity: '0.4' }, "slow");
+                div.animate({ width: '300px', opacity: '0.8' }, "slow");
+                div.animate({ height: '100px', opacity: '0.4' }, "slow");
+                div.animate({ width: '100px', opacity: '0.8' }, "slow");
+            });
+        });
+
+    </script>
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: cadetblue;
+            border: solid 1px #e2d933;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+
+        #kutu {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="flip">Slide down Panel</div>
+    <div id="panel">Merhaba Televole</div>
+    <div id="kutu">
+
+    </div>
+</body>
+</html>

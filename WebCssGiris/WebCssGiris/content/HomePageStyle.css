@@ -1,0 +1,45 @@
+﻿#wrapper {
+    width: 600px;
+    height: 800px;
+    margin: auto;
+}
+
+#header {
+    width: 600px;
+    height: 150px;
+    background-color: rebeccapurple;
+}
+
+#content {
+    width: 600px;
+    height: 500px;
+    background-color: antiquewhite;
+}
+
+#sidebar {
+    width: 200px;
+    height: 500px;
+    background-color: cadetblue;
+    float: left;
+}
+
+#article {
+    width: 400px;
+    height: 500px;
+    background-color: coral;
+    float: left;
+}
+
+.product {
+    width: 180px;
+    height: 230px;
+    margin: 10px;
+    background-color: burlywood;
+    float: left;
+}
+
+#footer {
+    width: 600px;
+    height: 150px;
+    background-color: darkgray;
+}

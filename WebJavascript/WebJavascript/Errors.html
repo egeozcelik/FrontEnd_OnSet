@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function Carpan() {
+            try {
+                var number = parseInt(document.getElementById("sayi").value);
+                var sonuc = number * 5;
+                if (isNaN(sonuc)) {
+                    throw exception;
+                }
+                alert(sonuc);
+            } catch (e) {
+                alert("Lütfen sayı giriniz");
+            }
+            finally {
+                alert("Doğru yanlış farketmeksızın çalışır");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="sayi" />
+    <br />
+    <input type="button" value="5 ile çarp" onclick="Carpan()" />
+</body>
+</html>

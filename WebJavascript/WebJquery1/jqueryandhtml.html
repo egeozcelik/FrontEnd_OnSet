@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                alert("Text: " + $("#test").text());
+            });
+
+            $("#btn2").click(function () {
+                alert("HTML: " + $("#test").html());
+            });
+
+            $("#btn3").click(function () {
+                alert("Value: " + $("#test2").val());
+            });
+
+            $("#btn4").click(function () {
+                $("#test").text("Merhaba Televole");
+                $("#test").html("<b>Merhaba Televole</b>");
+                $("#test2").val("Miki Fare");
+            });
+
+            $("#btn5").click(function () {
+                //$("#test").append("Hebele Bubele yazilar");
+                //$("#test").prepend("Hebele Bubele başına");
+
+                $("#test").after("Hebele Bubele yazilar");
+                $("#test").before("Hebele Bubele başına");
+            });
+
+            $("#btn6").click(function () {
+                //kaldırır
+                //$("#test").remove();
+                //içini boşaltır
+                $("#test").empty();
+            });
+
+            $("#btn7").click(function () {
+                //css class kaldırma
+                $("#kutu").removeClass("mavikutu");
+                //css class değiştirme
+                $("#kutu").addClass("sarikutu");
+            });
+
+            $("#btn8").click(function () {
+                //css ekleme
+                $("#boskutu").css({
+                    "background-color":"red",
+                    "height": "100px",
+                    "width":"100px"
+                });
+              
+            });
+        });
+    </script>
+    <style>
+        .mavikutu{
+            height:100px;
+            width:100px;
+            background-color:blue;
+        }
+        .sarikutu {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="kutu" class="mavikutu">
+    </div>
+    <div id="boskutu">
+    </div>
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show Html</button>
+    <br />
+    <br />
+    <p>Name: <input type="text" id="test2" value="Mickey Mouse"></p>
+    <button id="btn3">Show Textbox value</button>
+    <br />
+    <br />
+    <br />
+    <button id="btn4">Change value</button>
+    <br />
+    <br />
+    <br />
+    <button id="btn5">Add value</button>
+    <br />
+    <br />
+    <button id="btn6">Remove value</button>
+    <br />
+    <br />
+    <button id="btn7">Remove ADd class value</button>
+    <br />
+    <br />
+    <button id="btn8">Add css style</button>
+
+</body>
+</html>

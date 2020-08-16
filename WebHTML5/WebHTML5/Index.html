@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            context.font = "bold 32px Arial";
+            context.fillText("Hello World!", 50, 100);
+        };
+    </script>
+</head>
+<body>
+    <form>
+        <input type="color" id="myColor" />
+        <br />
+        <input type="date" id="myDate" />
+        <br />
+        <input type="datetime-local" id="localDate" />
+        <br />
+        <input type="email" id="email" />
+        <br />
+        <input type="submit" value="submit" />
+        <br />
+        <input type="number" min="1" max="50" step="0.5" id="myNumber" />
+        <br />
+        <input type="range" min="1" max="100" step="0.5" id="myNumber" />
+        <br />
+        <input type="search" />
+        <br />
+        <input type="text" />
+        <br />
+        <input type="tel" />
+        <br />
+        <input type="time" />
+        <br />
+        <input type="url" id="myurl" required>
+        <br />
+        <input type="week" id="myweek">
+        <br />
+        <input type="file" />
+        <br />
+        <input id="Radio1" type="radio" />
+        <br />
+        <input type="image" height="300" width="300" src="https://www.kostebek.com.tr/productimages/110690/big/kuam002.jpg" />
+    </form>
+    <audio src="http://commondatastorage.googleapis.com/codeskulptor-assets/Collision8-Bit.ogg"></audio>
+
+    <iframe width="420" height="315"
+            src="https://www.youtube.com/watch?v=gp2JuY5eAVo&list=RDgp2JuY5eAVo&start_radio=1"></iframe>
+    <video>
+        <source type="video/mp4"
+                src="https://www.youtube.com/watch?v=gp2JuY5eAVo&list=RDgp2JuY5eAVo&start_radio=1" />
+    </video>
+
+    <svg width="300" height="200">
+        <line x1="50" y1="50" x2="250" y2="150" style="stroke:red; stroke-width:3;" />
+    </svg>
+    <canvas id="myCanvas" height="300" width="300"></canvas>
+</body>
+</html>

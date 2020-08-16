@@ -1,0 +1,9 @@
+﻿body {
+    /*background-color: aqua;*/
+    background-image: url("https://productimages.hepsiburada.net/s/11/431/9038762311730.jpg");
+    /*background-repeat: repeat-x;*/
+    /*background-repeat: repeat-y;*/
+    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

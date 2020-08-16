@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script>
+        //Sayfaya değer yazdırma
+        document.write(Date());
+
+
+        function myfunction() {
+            //Elemanı id den yakalama
+            var deger = document.getElementById("test").value;
+            //Tag den yakalama
+            var deger2 = document.getElementsByTagName("p")[0].innerHTML;
+            //class dan çağırma
+            var deger3 = document.getElementsByClassName("karalama")[0].innerHTML;
+            //input taglerinden karalama class ına sahip olanlar
+            var deger4 = document.querySelector("input.karalama").value;
+            //id li elemente deger atama
+            document.getElementById("karalama").innerHTML = "Ahmet Taş";
+            //Css değiştirme
+            document.getElementById("karalama").style.color = "blue";
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="eventListener" id="eventlisten" />
+    <br />
+    <br />
+    <input type="text" class="karalama" value="mehmet" />
+    <br />
+    <p class="karalama" id="karalama">Bilge Adam karalama alanı</p>
+    <br />
+    <p>Bilge Adam</p>
+    <br />
+    <input type="text" value="ahmet" id="test" />
+    <br />
+    <input type="button"
+           value="gör"
+           id="custombtn"
+           onclick="myfunction()"
+           onmouseover="uzerineGeldi()"
+           onmouseout="uzerimdenCikti()" />
+</body>
+</html>
+<script>
+    function uzerineGeldi() {
+        document.getElementById("custombtn").style.color = "blue";
+    }
+    function uzerimdenCikti() {
+        document.getElementById("custombtn").style.color = "red";
+    }
+
+    document.getElementById("eventlisten")
+        .addEventListener("click", function () {
+            alert("Tıkladın");
+  });
+
+</script>

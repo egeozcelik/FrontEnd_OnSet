@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        /*
+          ==  : Eşitlik Kontrol
+          === : Eşitlik ve Tip Kontrolü
+          !=  : Eşit Değil
+          !== :Eşit Değil Tip olarakta
+          >   : Büyüktür
+          <   : Küçüktür
+          >=  : Büyük eşittir
+          <=  : Küçük eşittir
+          &&  : ve
+          ||  : veya
+          !   : not
+
+         */
+
+        function KontrolEt() {
+            var sayi1 = parseInt(document.getElementById("sayi1").value);
+            var sayi2 = parseInt(document.getElementById("sayi2").value);
+            if (sayi1 > sayi2) {
+                alert("Sayi1 Buyuktur");
+            }
+            else if (sayi1 < sayi2) {
+                alert("Sayi2 Buyuktur");
+            }
+            else {
+                alert("Eşittir");
+            }
+        }
+
+        function KontrolEt2() {
+            var deger = document.getElementById("takim").value,
+            switch (deger) {
+
+                case "fb":
+                    alert("Fenerbahçe");
+                    break;
+                case "gs":
+                    alert("Galatasarau");
+                    break;
+                case "bjk":
+                    alert("Beşiktas");
+                    break;
+                case "ts":
+                    alert("Trabzon Spor");
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td> Sayi1</td>
+            <td> <input type="text" id="sayi1" /></td>
+        </tr>
+        <tr>
+            <td> Sayi2</td>
+            <td> <input type="text" id="sayi2" /></td>
+        </tr>
+        <tr>
+            <td>Takim</td>
+            <td> <input type="text" id="takim" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> <input type="button" onclick="KontrolEt2()" value="Karşılaştır" /></td>
+        </tr>
+    </table>
+</body>
+</html>

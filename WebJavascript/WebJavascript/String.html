@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var isim = "Ahmet";
+        //alert(isim.length);
+
+        var x = "Soru sordum \"Merhaba Dünya\" diye seslendi";
+        //alert(x);
+
+        //\n alt satıra geçme
+
+        var value = "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.Lorem Ipsum, adı"
+        //alert(value);
+
+        //deger arama baştan
+        var index = value.indexOf("baskı");
+        //sondan
+        index = value.lastIndexOf("baskı");
+        var pos = value.search("baskı");
+        //alert(pos);
+
+        //Metnin bir kısmını alma
+        var str = "Apple, Banana, Kiwi";
+        //7 ile 13 arasına al
+        var res = str.slice(-7, 13);
+        res = str.substring(7, 13);
+        //7 den başla 13 karakter al
+        res = str.substr(7, 13);
+        //alert(res);
+
+        //Değiştirme
+        str = "Please visit Microsoft and Microsoft !";
+        var n = str.replace("Microsoft", "W3Schools");
+
+        //Büyük harfe çevirir
+        n = n.toUpperCase();
+        //küçük harfe çeviri
+        n = n.toLowerCase();
+
+        var text1 = "Ahmet";
+        var text2 = "Taş";
+
+        //Sağındaki solundakı boşlukları alır
+
+        text1 = "   Ahmet Taş   ";
+        //alert(text1.trim());
+
+        text1 = "Bhmet Taş";
+        //indexdeki elemanı döndürür
+        //alert(text1.charAt(0));
+        //alert(text1[0]);
+        //alert(text1.charCodeAt(0));
+
+        text1 = "a,b,c,d,e";
+        var deger = text1.split(',');
+        for (var i = 0; i < deger.length; i++) {
+            alert(deger[i]);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

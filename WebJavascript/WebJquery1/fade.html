@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#clickMe").click(function () {
+                //Eleman Gizleme
+                //$("p").show();
+                //$("p").fadeIn();
+                //$("p").fadeIn("slow");
+                //$("p").fadeIn(3000);
+                //$("p").fadeToggle();
+                //$("p").fadeTo("slow", 0.50);
+            });
+
+            $("#clickMe2").click(function () {
+                //$("p").hide();
+                //$("p").fadeOut();
+                //$("p").fadeOut("slow");
+                //$("p").fadeOut(3000);
+                //$("p").fadeToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Burası metin alanıdır.Burada gezmeyin</p>
+    <br />
+    <input type="button" id="clickMe" value="Show" />
+    <br />
+    <input type="button" id="clickMe2" value="Hide" />
+</body>
+</html>

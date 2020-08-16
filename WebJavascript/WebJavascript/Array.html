@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var cars = ["TOGG", "Ford", "Fiat", "Tofaş"]
+        //alert(cars[0]);
+        //dizi uzunlugu
+        var ilkEleman = cars[0];
+        cars.push("Skoda");
+        cars[5] = "Hebele";
+        //cars.pop();
+
+        //Eleman silme
+        delete cars[0];
+        var soneleman = cars[cars.length - 1]
+        alert(soneleman);
+
+        var myGirls = ["Cecilie", "Lone"];
+        var myBoys = ["Emil", "Tobias", "Linus"];
+
+        var child = myGirls.concat(myBoys);
+
+        //diziyi sıralama
+        cars.sort();
+        //Diziyi tesrt çevirme
+        cars.reverse();
+        var ss = "";
+    </script>
+</head>
+<body>
+
+</body>
+</html>

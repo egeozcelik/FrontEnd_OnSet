@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--1 den 100 e kadar olan 2 ile bölünen sayıların toplamı nedir ?-->
+    <script>
+        function Hesapla() {
+            var toplam = 0;
+            for (var i = 0; i < 100; i++) {
+                if (i % 2 == 0) {
+                    toplam += i;
+                }
+            }
+            alert(toplam);
+        }
+
+        function HesaplaWhile() {
+            var toplam = 0;
+            var i = 0;
+            while (i < 100) {
+                if (i % 2 == 0) {
+                    toplam += i;
+                }
+                i++;
+            }
+            alert(toplam);
+        }
+
+    </script>
+
+</head>
+<body>
+    <input type="button" value="Sonuc" onclick="HesaplaWhile()" />
+</body>
+</html>

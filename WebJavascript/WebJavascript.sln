@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJavascript", "WebJavascript\WebJavascript.csproj", "{010C5345-2AD2-477B-9CE9-0A2276D9FF19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJquery1", "WebJquery1\WebJquery1.csproj", "{1AE3D9F2-15AD-4D9D-AEFA-C18BB9FA2D84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{010C5345-2AD2-477B-9CE9-0A2276D9FF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010C5345-2AD2-477B-9CE9-0A2276D9FF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{010C5345-2AD2-477B-9CE9-0A2276D9FF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010C5345-2AD2-477B-9CE9-0A2276D9FF19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AE3D9F2-15AD-4D9D-AEFA-C18BB9FA2D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE3D9F2-15AD-4D9D-AEFA-C18BB9FA2D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AE3D9F2-15AD-4D9D-AEFA-C18BB9FA2D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AE3D9F2-15AD-4D9D-AEFA-C18BB9FA2D84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D28EAEE-A30C-477D-8C10-7E4D2852E374}
+	EndGlobalSection
+EndGlobal
